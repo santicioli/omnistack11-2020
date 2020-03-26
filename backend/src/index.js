@@ -1,6 +1,6 @@
 // atribui a uma constante recursos de framework e módulos
 const express = require('express') //pacote
-const express = require('cors') //pacote
+const cors = require('cors') //pacote
 
 //importar rotas salvas no arquivo routes.j
 const routes = require('./routes') //arquivo relativo (./ - mesma pasta) (../ - pasta acima)
