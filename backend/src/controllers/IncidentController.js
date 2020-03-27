@@ -8,7 +8,7 @@ module.exports = {
         // atribui a count o valor da primeira posição
         const [count] = await connection('incidents').count()
         // cabeçalho da resposta, count(*) - campo de retorno
-        response.header('X-Total-Colunt', count['count(*)'])
+        response.header('X-Total-Count', count['count(*)'])
 
         const incidents = await connection('incidents')
         .join('ongs', 'ongs.id', '=', 'incidents.ong_id')

@@ -16,7 +16,7 @@ export default function Profile() {
 
 
   //array de dependencia
-  //useEffect(() => toda vez que ongId mudasse executaria a função
+  //useEffect(() => função que executa quando as constantes(ongId) do array muda
   //useEffect(() => {}, [ongId])
   useEffect(() => {
     api.get('profile',{
